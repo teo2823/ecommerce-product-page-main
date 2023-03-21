@@ -4,13 +4,33 @@
 body {
     font-family: 'Kumbh Sans', sans-serif !important;
     font-size: 16px;
+
+}
+
+main {
+    @media (min-width: 1000px){
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        place-content: center;
+    }
 }
 
 .header {
     height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+
+    .header-content {
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        @media (min-width: 1000px){
+            padding: 0 !important;
+        }
+    }
     .left {
         display: flex;
         align-items: center;
@@ -40,7 +60,7 @@ body {
 
     nav {
         display: none;
-        @media(min-width: 500px){
+        @media(min-width: 1000px){
             display: block;
         }
     }
@@ -52,7 +72,7 @@ body {
             color: black;
             text-decoration: none;
         }
-        @media(min-width: 500px){
+        @media(min-width: 1000px){
             flex-direction: row;
         }
 
@@ -63,8 +83,13 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    @media (min-width: 800px){
+    max-width: 500px;
+    height: calc(100% - 86px );
+    @media (min-width: 1000px){
         flex-direction: row;
+        max-width: 1200px;
+        gap: 10%;
+        
     }
 
     .images-product-preview {
@@ -72,11 +97,20 @@ body {
         justify-content: space-between;
         img {
             border-radius: 7px;
-            width: 50px;
+            width: 70px;
+        }
+        @media (min-width: 1000px){
+           display: flex;
         }
     }
 
     .product-details {
+        @media (min-width: 1000px){
+            height: 100%;
+            display: grid;
+            place-content: center;
+            
+        }
         .subtitle {
             font-weight: 700;
             color: variables.$orange;
@@ -133,7 +167,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        @media (min-width: 500px){
+            width: 30%;
+        }
         button {
             border: none;
             background-color: variables.$lightgrayishblue;
@@ -154,6 +190,11 @@ body {
         color: variables.$lightgrayishblue;
         border-radius: 8px;
         height: 40px;
+        margin-top: 20px;
+        @media (min-width: 500px){
+            width: 70%;
+            margin-top: 0;
+        }
         .cart-button {
             color: white;
         }
@@ -169,5 +210,14 @@ body {
 
 
 
+}
+
+.addtocart {
+    @media (min-width: 500px){
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
 }
 

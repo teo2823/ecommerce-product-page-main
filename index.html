@@ -14,96 +14,103 @@
 
 </head>
 <body>
-  <header class="header container-fluid">
-    <div class="left">
-      <img src="./images/icon-menu.svg" alt="menuburger" class="burgermenu">
-      <img src="./images/logo.svg" alt="Sneakers-logo" class="logo">
-      
-      <nav>
-        <ul class="list-nav">
-          <a href=""><li>Collections</li></a>
-          <a href=""><li>Menu</li></a>
-          <a href=""><li>Women</li></a>
-          <a href=""><li>About</li></a>
-          <a href=""><li>Contact</li></a>
-        </ul>
-      </nav>
-    </div>
-    <div class="right">
-      <img src="./images/icon-cart.svg" alt="cartIcon" class="iconcart">
-      <img src="./images/image-avatar.png" alt="" class="photo-profile">
+  <header class="header">
+    <div class="header-content container-fluid">
+      <div class="left">
+        <img src="./images/icon-menu.svg" alt="menuburger" class="burgermenu">
+        <img src="./images/logo.svg" alt="Sneakers-logo" class="logo">
+        
+        <nav>
+          <ul class="list-nav">
+            <a href=""><li>Collections</li></a>
+            <a href=""><li>Menu</li></a>
+            <a href=""><li>Women</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <img src="./images/icon-cart.svg" alt="cartIcon" class="iconcart">
+        <img src="./images/image-avatar.png" alt="" class="photo-profile">
+      </div>
     </div>
   </header>
 
-  <div class="product">
-    <div class="product-carrousel">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/image-product-1.jpg" class="d-block w-100" alt="...">
+  <main>
+    <div class="product">
+      <div class="product-carrousel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/image-product-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-product-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-product-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-product-4.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="./images/image-product-2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/image-product-3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/image-product-4.jpg" class="d-block w-100" alt="...">
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <div class="images-product-preview mt-3">
-        <img src="./images/image-product-1-thumbnail.jpg" alt="">
-        <img src="./images/image-product-2-thumbnail.jpg" alt="">
-        <img src="./images/image-product-3-thumbnail.jpg" alt="">
-      </div>
-    </div>
-    <div class="product-details container-fluid mt-3">
-
-      <p class="subtitle">SNEAKER COMPANY</p>
-      <h1 class="title-product">Fall Limited Edition Sneakers</h1>
   
-      <p class="descripcion-product">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-        durable rubber outer sole, they'll withstand everything the weather can offer.
-      </p>
-
-      <div class="price-container">
-        <div class="price-main">
-          <h2 class="price-number">$125.00</h2>
-          <p class="descuento-price">50%</p>
+        <div class="images-product-preview mt-3">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="">
         </div>
-        <p class="price-original">$250.00</p>
       </div>
+      <div class="product-details container-fluid mt-3">
+  
+        <p class="subtitle">SNEAKER COMPANY</p>
+        <h1 class="title-product">Fall Limited Edition Sneakers</h1>
+    
+        <p class="descripcion-product">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+  
+        <div class="price-container">
+          <div class="price-main">
+            <h2 class="price-number">$125.00</h2>
+            <p class="descuento-price">50%</p>
+          </div>
+          <p class="price-original">$250.00</p>
+        </div>
 
-      <div class="button-add">
-        <button class="button-minus">
-          <img src="./images/icon-minus.svg" alt="">
-        </button>
+        <div class="addtocart mb-4">
 
-        <span class="number-add">0</span>
-        <button class="button-plus">
-          <img src="./images/icon-plus.svg" alt="">
-        </button>
-      </div>
-
-
-      <button class="button-addcart gap-2 col-12 mx-auto mt-4">
-        <img src="./images/icon-cart.svg" alt="" class="cart-button">
-        <p class="text-addcart">Add to cart</p>
-      </button>
+          <div class="button-add">
+            <button class="button-minus">
+              <img src="./images/icon-minus.svg" alt="">
+            </button>
+    
+            <span class="number-add">0</span>
+            <button class="button-plus">
+              <img src="./images/icon-plus.svg" alt="">
+            </button>
+          </div>
+    
+    
+          <button class="button-addcart gap-2 col-12 mx-auto">
+            <img src="./images/icon-cart.svg" alt="" class="cart-button">
+            <p class="text-addcart">Add to cart</p>
+          </button>
+        </div>
+        </div>
+  
     </div>
-
-  </div>
+  </main>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
