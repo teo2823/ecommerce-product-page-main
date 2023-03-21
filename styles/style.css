@@ -1,0 +1,154 @@
+body {
+  font-family: "Kumbh Sans", sans-serif !important;
+  font-size: 16px;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left {
+  display: flex;
+  align-items: center;
+}
+.header .left .burgermenu {
+  width: 15px;
+  height: 15px;
+}
+.header .left .logo {
+  width: 110px;
+  margin-left: 15px;
+}
+.header .right {
+  display: flex;
+  align-items: center;
+}
+.header .right .iconcart {
+  width: 17px;
+  height: 17px;
+  margin-right: 20px;
+}
+.header .right .photo-profile {
+  width: 20px;
+}
+.header nav {
+  display: none;
+}
+@media (min-width: 500px) {
+  .header nav {
+    display: block;
+  }
+}
+.header .list-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.header .list-nav a {
+  color: black;
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  .header .list-nav {
+    flex-direction: row;
+  }
+}
+
+.product {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .product {
+    flex-direction: row;
+  }
+}
+.product .images-product-preview {
+  display: none;
+  justify-content: space-between;
+}
+.product .images-product-preview img {
+  border-radius: 7px;
+  width: 50px;
+}
+.product .product-details .subtitle {
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  font-size: 0.7em;
+  letter-spacing: 2px;
+}
+.product .title-product {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: hsl(220, 13%, 13%);
+}
+.product .descripcion-product {
+  font-weight: 400;
+  color: hsl(219, 9%, 45%);
+  font-size: 0.9em;
+}
+.product .price-container {
+  display: flex;
+  justify-content: space-between;
+}
+.product .price-container .price-main {
+  display: flex;
+  padding: 0;
+}
+.product .price-container .price-main .price-number {
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+  margin-right: 20px;
+}
+.product .price-container .price-main .descuento-price {
+  background-color: hsl(25, 100%, 94%);
+  padding: 5px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.product .price-container .price-original {
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.product .button-add {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product .button-add button {
+  border: none;
+  background-color: hsl(223, 64%, 98%);
+}
+.product .button-add span {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.product .button-addcart {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(223, 64%, 98%);
+  border-radius: 8px;
+  height: 40px;
+}
+.product .button-addcart .cart-button {
+  color: white;
+}
+.product .button-addcart p {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: hsl(223, 64%, 98%);
+  margin: 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
