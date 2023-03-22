@@ -35,10 +35,21 @@ body {
 .header .left .burgermenu {
   width: 15px;
   height: 15px;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .header .left .burgermenu {
+    display: none;
+  }
 }
 .header .left .logo {
   width: 110px;
   margin-left: 15px;
+}
+@media (min-width: 1000px) {
+  .header .left .logo {
+    width: 150px;
+  }
 }
 .header .right {
   display: flex;
@@ -52,8 +63,22 @@ body {
 .header .right .photo-profile {
   width: 20px;
 }
-.header nav {
-  display: none;
+@media (min-width: 1000px) {
+  .header .right .photo-profile {
+    width: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .header nav {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 2;
+    transition: all 400ms linear;
+  }
 }
 @media (min-width: 1000px) {
   .header nav {
@@ -61,17 +86,66 @@ body {
   }
 }
 .header .list-nav {
-  display: flex;
-  flex-direction: column;
   list-style: none;
+}
+@media (max-width: 1000px) {
+  .header .list-nav {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1000px) {
+  .header .list-nav {
+    padding: 0 0 0 50px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.header .list-nav .iconClose {
+  width: 15px;
+  padding-bottom: 50px;
+}
+@media (min-width: 1000px) {
+  .header .list-nav .iconClose {
+    display: none;
+  }
 }
 .header .list-nav a {
   color: black;
   text-decoration: none;
 }
+.header .list-nav a li {
+  font-weight: 700;
+  padding-bottom: 15px;
+  color: hsl(220, 13%, 13%);
+}
+@media (min-width: 1000px) {
+  .header .list-nav a li {
+    font-weight: 400;
+    padding-bottom: 0;
+  }
+}
 @media (min-width: 1000px) {
   .header .list-nav {
     flex-direction: row;
+  }
+}
+.header .blurbackground {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+@media (min-width: 1000px) {
+  .header .blurbackground {
+    display: none;
   }
 }
 
